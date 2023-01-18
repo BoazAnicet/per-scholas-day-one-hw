@@ -1,0 +1,79 @@
+/* Insert any CSS code below here */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#outside,
+#inside {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  transition: 1s;
+  transform-origin: 0;
+  height: 800px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#inside {
+  z-index: 0;
+}
+
+.open-card {
+  transform-origin: center;
+  transform: rotateY(90deg);
+}
+
+#outside-title {
+  font-family: "Pacifico", cursive;
+}
+
+#outside-title,
+#inside-title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#outside-title span {
+  color: blueviolet;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Pacifico", cursive;
+}
+
+#outside-pic,
+#inside-pic {
+  width: 300px;
+}
+
+#message {
+  color: black;
+  text-align: center;
+  max-width: 300px;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: burlywood;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
